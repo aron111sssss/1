@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Future - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo1.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="orders.html">Order</a></li>
+                <li><a id="auth-link" href="#">Log/Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-grid">
+            <h2>Courses</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <h3>Networking Basics and Configuration Course</h3>
+                    <p>ICT403</p>
+                    <p>This program explores networking fundamentals, layout designs, address assignment, and the setup of hardware such as routers and switches. Participants gain practical experience in creating and maintaining compact networks.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Programming Language Entry Course</h3>
+                    <p>ICT604</p>
+                    <p>A primer on Python grammar, built-in data kinds, and flow-control tools. By working through mini-apps and guided tasks, students build computational habits and core scripting ability for later coding work.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Database Management and Application Course</h3>
+                    <p>ICT405</p>
+                    <p>Introduces the foundations of databases—relational theory and SQL—alongside hands-on use of mainstream engines such as MySQL and Oracle. Learners practice building, retrieving, modifying, and maintaining data so they can architect and administer their own databases.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Cybersecurity and Protection Course</h3>
+                    <p>ICT536</p>
+                    <p>Surveys the threat landscape—malware, phishing, intrusions—and the countermeasures that foil them, from firewall rule-sets to modern encryption schemes. Participants leave ready to harden network infrastructure and keep critical data out of adversaries’ hands.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Web Front - End Development Course</h3>
+                    <p>ICT507</p>
+                    <p>Centres on HTML, CSS and JavaScript to craft engaging, interactive pages and to apply responsive techniques so sites adapt smoothly to any screen size.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <main>
+        <section class="product-grid">
+            <h2>Training Resources</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <h3>Network Troubleshooting</h3>
+                    <p>Provides tools and techniques for diagnosing and fixing network issues.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Python Data Analysis Case Collection</h3>
+                    <p>Features Python data analysis cases covering cleaning, transformation, and visualization.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Database Performance Optimization</h3>
+                    <p>Supplies strategies and examples for boosting database performance.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Cybersecurity Attack and Defense Exercises</h3>
+                    <p>Simulates attack and defense scenarios to enhance cybersecurity skills.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Web Front-End Frameworks</h3>
+                    <p>Introduces front-end frameworks like Vue.js/React.js for efficient development.</p>
+                </div>
+                <div class="product-card">
+                    <h3>IT Project Management Basics</h3>
+                    <p>Covers essential IT project management concepts and practices.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Server OS Management</h3>
+                    <p>Teaches management of server operating systems like Linux and Windows Server.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Mobile App Development Intro</h3>
+                    <p>Guides beginners in mobile app development with practical examples.</p>
+                </div>
+                <div class="product-card">
+                    <h3>IT Service Desk Operations</h3>
+                    <p>Trains on IT service desk workflows and problem-solving techniques.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Cloud Computing/Virtualization</h3>
+                    <p>Explores cloud computing and virtualization technologies and applications.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IT Store. All rights reserved.</p>
+        <p>Aron</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTrainingResources();
+            checkLoggedIn();
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Resources - X Future</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo1.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a id="auth-link" href="#">Log/Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="resource-section">
+            <h2 id="course-title">Course Resources</h2>
+            <div id="resources-container" class="resource-container">
+                <!-- Resources will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 IT Store. All rights reserved.</p>
+            <p>Aron</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 从URL获取课程ID并加载资源
+        const urlParams = new URLSearchParams(window.location.search);
+        const courseId = urlParams.get('courseId');
+        if (courseId) {
+            loadResources(courseId);
+            // 设置课程标题
+            const course = courses.find(c => c.id === courseId);
+            if (course) {
+                document.getElementById('course-title').textContent = `${course.name} - Resources`;
+            }
+        }
+    </script>
+</body>
+</html>

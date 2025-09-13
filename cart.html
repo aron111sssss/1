@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Future - Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo1.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a id="auth-link" href="#">Log/Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <h2>Shopping Cart</h2>
+            <div id="cart-container"></div>
+        </section>
+        <section class="checkout-section">
+            <h2>Checkout</h2>
+            <button class="cta-button" id="confirm-order-button" onclick="confirmOrder()">Confirm Order</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IT Store. All rights reserved.</p>
+        <p>Aron</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
